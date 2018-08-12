@@ -1999,8 +1999,8 @@ void hdd_save_gtk_params(hdd_adapter_t *adapter,
 		 * Caller should make sure fils_join_rsp is
 		 * not NULL, if there is need to use else where.
 		 */
-		kek = csr_roam_info->fils_join_rsp->kek;
-		kek_len = csr_roam_info->fils_join_rsp->kek_len;
+		kek = 0;
+		kek_len = 0;
 	}
 
 	wlan_hdd_save_gtk_offload_params(adapter, NULL, kek, kek_len,
